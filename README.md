@@ -1,25 +1,23 @@
 # README_Generator
-# juice 
+# hi 
  
 ## Description 
- is## License 
- This application is covered under the MIT License 
-
+ this[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  ## Table of Contents 
- 1. [Installation] (#installation) 
- 2. [Usage] (#usage) 
- 3. [License] (#license) 
- 4. [Contributing] (#contributing) 
- 5. [Tests] (#tests) 
- 6. [Questions] (#questions) 
+ 1. [Installation](#installation) 
+ 2. [Usage](#usage) 
+ 3. [License](#license) 
+ 4. [Contributing](#contributing) 
+ 5. [Tests](#tests) 
+ 6. [Questions](#questions) 
  
 ## Installation 
- a 
+ is 
 ## Usage 
- great 
+ my 
 ## License 
  This application is covered under the MIT License 
 ## Contributing 
- dog 
+ project 
 ## Tests 
- some 
+ on 
