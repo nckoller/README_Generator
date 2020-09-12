@@ -1,17 +1,25 @@
 # README_Generator
-
-# gfds 
+# juice 
  
 ## Description 
- gfds 
+ is## License 
+ This application is covered under the MIT License 
+
+ ## Table of Contents 
+ 1. [Installation] (#installation) 
+ 2. [Usage] (#usage) 
+ 3. [License] (#license) 
+ 4. [Contributing] (#contributing) 
+ 5. [Tests] (#tests) 
+ 6. [Questions] (#questions) 
  
- ## Installation 
- fds 
+## Installation 
+ a 
 ## Usage 
- gfds 
+ great 
 ## License 
- This application is covered under the MIT License## Contributing 
- fds 
+ This application is covered under the MIT License 
+## Contributing 
+ dog 
 ## Tests 
- fds 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+ some 
