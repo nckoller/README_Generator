@@ -16,7 +16,6 @@ function getTitle(readMeConfigObj) {
       },
     ])
     .then((answers) => {
-      console.info("Answer:", answers.title);
       readMeConfigObj.title = answers.title;
       getDescription(readMeConfigObj);
     });
@@ -32,7 +31,6 @@ function getDescription(readMeConfigObj) {
       },
     ])
     .then((answers) => {
-      console.info("Answer:", answers.description);
       readMeConfigObj.description = answers.description;
       getInstallInstructions(readMeConfigObj);
     });
@@ -48,7 +46,6 @@ function getInstallInstructions(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.installation);
       readMeConfigObj.installation = answer.installation;
       getUsageInformation(readMeConfigObj);
     });
@@ -64,7 +61,6 @@ function getUsageInformation(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.usage);
       readMeConfigObj.usage = answer.usage;
       getContributionGuidelines(readMeConfigObj);
     });
@@ -80,7 +76,6 @@ function getContributionGuidelines(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.contribution);
       readMeConfigObj.contribution = answer.contribution;
       getTestInstructions(readMeConfigObj);
     });
@@ -96,7 +91,6 @@ function getTestInstructions(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.testing);
       readMeConfigObj.testing = answer.testing;
       getLicense(readMeConfigObj);
     });
@@ -113,7 +107,6 @@ function getLicense(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info(answer.license);
       readMeConfigObj.license = answer.license;
       getGitHubName(readMeConfigObj);
     });
@@ -129,7 +122,6 @@ function getGitHubName(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.gitHubName);
       readMeConfigObj.gitHubName = answer.gitHubName;
       getEmail(readMeConfigObj);
     });
@@ -145,7 +137,6 @@ function getEmail(readMeConfigObj) {
       },
     ])
     .then((answer) => {
-      console.info("Answer:", answer.email);
       readMeConfigObj.email = answer.email;
       readMeBuilder(readMeConfigObj);
     });
@@ -154,7 +145,7 @@ function getEmail(readMeConfigObj) {
 function readMeBuilder(readMeConfigObj) {
   let readMeText = "";
   const tableOfContents =
-    "\n ## Table of Contents \n 1. [Installation](#installation) \n 2. [Usage](#usage) \n 3. [License](#license) \n 4. [Contributing](#contributing) \n 5. [Tests](#tests) \n 6. [Questions](#questions) \n \n";
+    "\n## Table of Contents \n 1. [Installation](#installation) \n 2. [Usage](#usage) \n 3. [License](#license) \n 4. [Contributing](#contributing) \n 5. [Tests](#tests) \n 6. [Questions](#questions) \n \n";
   readMeText += parseTitle(readMeConfigObj.title);
   readMeText += parseDescription(readMeConfigObj.description);
   readMeText += parseBadge(readMeConfigObj.license);
@@ -178,7 +169,6 @@ function readMeBuilder(readMeConfigObj) {
 
   fs.writeFile(fileName, readMeText, function (err) {
     if (err) return console.log(err);
-    console.log("Hello World > helloworld.txt");
   });
 }
 
