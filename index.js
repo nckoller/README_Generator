@@ -1,8 +1,6 @@
 import inquirer from "inquirer";
 import fs from "fs";
 
-// const inquirer = new inquirer();
-
 function main() {
   const readMeConfigObj = {};
   getTitle(readMeConfigObj);
@@ -149,7 +147,6 @@ function getEmail(readMeConfigObj) {
     .then((answer) => {
       console.info("Answer:", answer.email);
       readMeConfigObj.email = answer.email;
-      //   console.log(readMeConfigObj);
       readMeBuilder(readMeConfigObj);
     });
 }
@@ -177,7 +174,7 @@ function readMeBuilder(readMeConfigObj) {
   const timeStamp = new Date();
   console.log(timeStamp);
   const timeStampString = Math.round(timeStamp.getTime() / 1000);
-  const fileName = `${timeStampString}.md`;
+  const fileName = `./readme_exports/${timeStampString}.md`;
 
   fs.writeFile(fileName, readMeText, function (err) {
     if (err) return console.log(err);
@@ -249,8 +246,3 @@ function parseContacts(gitHubName, email) {
 }
 
 main();
-// console.log("this ran");
-
-// Figure out how to add License badge near the top of the README
-
-// Table of Contents
