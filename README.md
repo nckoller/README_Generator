@@ -19,6 +19,7 @@ First, make sure you have [Node.js](https://nodejs.org/en/) installed on your co
 ## Usage
 
 The application will ask the user a series of prompts (ex: "What is your project title?"). Once all the prompts are answered, the responses will be formatted and saved to a new file in the "readme_exports" directory. The filename will be a timestamp of when the file was created.
+<img src="./assets/ReadmeDemoImg1.png" src="screenshot of bash window with various prompts">
 
 ## License
 
